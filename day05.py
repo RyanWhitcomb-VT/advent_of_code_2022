@@ -1,23 +1,4 @@
 # Advent of Code 2022: Day 5
-# ['[V]         [T]         [J]        ',
-#  '[Q]         [M] [P]     [Q]     [J]',
-#  '[W] [B]     [N] [Q]     [C]     [T]',
-#  '[M] [C]     [F] [N]     [G] [W] [G]',
-#  '[B] [W] [J] [H] [L]     [R] [B] [C]',
-#  '[N] [R] [R] [W] [W] [W] [D] [N] [F]',
-#  '[Z] [Z] [Q] [S] [F] [P] [B] [Q] [L]',
-#  '[C] [H] [F] [Z] [G] [L] [V] [Z] [H]',
-#  ' 1   2   3   4   5   6   7   8   9 ']
-
-#     [D]
-# [N] [C]
-# [Z] [M] [P]
-#  1   2   3
-#
-# move 1 from 2 to 1
-# move 3 from 1 to 3
-# move 2 from 2 to 1
-# move 1 from 1 to 2
 import re
 
 
