@@ -3,15 +3,12 @@ import collections
 
 
 def step(cur_pos, new_pos, elev, visit_set, pos_loc):
-    print(cur_pos, new_pos)
     new_x = new_pos[0]
     new_y = new_pos[1]
     cur_dist = cur_pos[2]
 
     if (0 <= new_y < len(elev)) and (0 <= new_x < len(elev[new_y])):
-        print(elev[new_y][new_x], elev[cur_pos[1]][cur_pos[0]])
         if elev[new_y][new_x] - elev[cur_pos[1]][cur_pos[0]] <= 1:
-            print('added')
             valid_loc = (new_x, new_y, cur_dist+1)
             pos_loc.append(valid_loc)
             visit_set.add(valid_loc[:2])
@@ -56,6 +53,6 @@ if __name__ == '__main__':
         current_position = possible_locations.popleft()
 
     # Part 1
-    print(f"Part 1: {current_position[2]}")
+    print(f"{current_position[2]}")
 
 
