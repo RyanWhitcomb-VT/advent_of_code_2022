@@ -30,7 +30,6 @@ if __name__ == '__main__':
             elevation[row][line.index(ord('E'))] = ord('z')
 
     possible_locations = collections.deque()
-
     # Loop for part 2
     for j in range(len(elevation)):
         for i in range(len(elevation[j])):
